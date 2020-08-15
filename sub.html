@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전북 축제 On!</title>
+    <script src="/js/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/common.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+
+    <!-- 찾아오시는 길 -->
+    <div id="road-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body py-4 px-3 text-center fx-3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /찾아오시는 길 -->
+
+    <!-- 헤더 영역 -->
+    <header class="header--sub">
+        <div class="header__top d-none d-lg-block">
+            <div class="container d-between h-100">
+                <div class="header-search">
+                    <div class="icon">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-util">
+                    <select>
+                        <option value="ko">한국어</option>
+                        <option value="en">English</option>
+                        <option value="ch">中文(简体)</option>
+                    </select>
+                    <a href="#">전라북도청</a>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container d-between h-100">
+                <a href="#">
+                    <img src="/images/logo.svg" alt="전북 축제 On!" title="전북 축제 On!" height="45">
+                </a>
+                <!-- 데스크톱 -->
+                <div class="navi d-none d-lg-flex">
+                    <div class="navi__item">
+                        <a href="#">HOME</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">전북 대표 축제</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">축제 정보</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">축제 일정</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">환율안내</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">종합지원센터</a>
+                        <div class="navi__sub-list">
+                            <a href="#">공지사항</a>
+                            <a href="#">센터 소개</a>
+                            <a href="#">관광정보 문의</a>
+                            <a href="#">데이터 공개</a>
+                            <a href="#" data-target="#road-modal" data-toggle="modal">찾아오시는 길</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 모바일 -->
+                <label for="open-aside" class="icon d-lg-none">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <aside class="header-aside">
+                    <div class="header-search header-search--mobile">
+                        <div class="icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="header-util header-util--mobile">
+                        <select>
+                            <option value="ko">한국어</option>
+                            <option value="en">English</option>
+                            <option value="ch">中文(简体)</option>
+                        </select>
+                        <a href="#">전라북도청</a>
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                    <div class="navi navi--mobile">
+                        <div class="navi__item">
+                            <a href="#">HOME</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">전북 대표 축제</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">축제 정보</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">축제 일정</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">환율안내</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">종합지원센터</a>
+                            <div class="navi__sub-list">
+                                <a href="#">공지사항</a>
+                                <a href="#">센터 소개</a>
+                                <a href="#">관광정보 문의</a>
+                                <a href="#">데이터 공개</a>
+                                <a href="#" data-target="#road-modal" data-toggle="modal">찾아오시는 길</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="header-sub">
+                <div class="container">
+                    <a href="#">전북 축제 On!</a>
+                    <span class="mx-2"><i class="fa fa-angle-right"></i></span>
+                    <a href="#">종합지원센터</a>
+                    <span class="mx-2"><i class="fa fa-angle-right"></i></span>
+                    <a href="#">공지사항</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /헤더 영역 -->
+
+    <!-- 공지사항 -->
+    <div class="container padding">
+        <div class="row">
+            <div class="col-lg-3">
+                <hr>
+                <div class="title">
+                    <h1>NOTICE <strong>ON!</strong></h1>
+                    <p>공지사항</p>
+                </div>
+                <div class="notice-search">
+                    <div class="icon"><i class="fa fa-search"></i></div>
+                    <input type="text" placeholder="검색어를 입력하세요">
+                </div>
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+                <div class="t-head">
+                    <div class="cell-10">순번</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-20">작성일</div>
+                    <div class="cell-20">작성자</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">5</div>
+                    <div class="cell-50 text-left px-2 text-ellipsis">군산공항 이용안내(2019.03.31 부터~)</div>
+                    <div class="cell-20">2020-08-12</div>
+                    <div class="cell-20">관리자</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">4</div>
+                    <div class="cell-50 text-left px-2 text-ellipsis">2020년 하반기 관광진흥개발기금 융자지원지침 안내</div>
+                    <div class="cell-20">2020-08-07</div>
+                    <div class="cell-20">관리자</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">3</div>
+                    <div class="cell-50 text-left px-2 text-ellipsis">청정전북 숨겨진 테마별 관광지</div>
+                    <div class="cell-20">2020-08-04</div>
+                    <div class="cell-20">관리자</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">2</div>
+                    <div class="cell-50 text-left px-2 text-ellipsis">낙후된 전북 동부권 개발 3단계 착수 … 5년간 1800억 투입	</div>
+                    <div class="cell-20">2020-08-01</div>
+                    <div class="cell-20">관리자</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">1</div>
+                    <div class="cell-50 text-left px-2 text-ellipsis">전북관광브랜드공연 뮤지컬‘홍도1589’공연 재개</div>
+                    <div class="cell-20">2020-07-27</div>
+                    <div class="cell-20">관리자</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /공지사항 -->
+
+    
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer__top">
+            <div class="container d-flex flex-wrap">
+                <a href="#" class="mr-3">이용안내</a>
+                <a href="#" class="mr-3">개인정보 처리방침</a>
+                <a href="#" class="mr-3">저작권 보호정책</a>
+                <a href="#" class="mr-3">도로명 주소안내</a>
+                <a href="#" class="mr-3">사이트오류 신고</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container text-center text-lg-left">
+                <div class="row py-2">
+                    <div class="col-lg-3">
+                        <img class="logo" src="/images/logo.svg" alt="전북 축제 On!" title="전북 축제 On!" height="40">
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="text-muted fx-n3">인천시 부평구 무네미로 448번길 77 한국산업인력공단 글로벌숙련기술진흥원</p>
+                        <p class="text-muted fx-n3">COPYRIGHTⓒ 2016 HRDKOREA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /푸터 -->
+</body>
+</html>

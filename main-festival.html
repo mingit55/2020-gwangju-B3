@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전북 축제 On!</title>
+    <script src="/js/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/common.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+
+    <!-- 찾아오시는 길 -->
+    <div id="road-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body py-4 px-3 text-center fx-3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /찾아오시는 길 -->
+
+    <!-- 헤더 영역 -->
+    <header class="header--sub">
+        <div class="header__top d-none d-lg-block">
+            <div class="container d-between h-100">
+                <div class="header-search">
+                    <div class="icon">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-util">
+                    <select>
+                        <option value="ko">한국어</option>
+                        <option value="en">English</option>
+                        <option value="ch">中文(简体)</option>
+                    </select>
+                    <a href="#">전라북도청</a>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container d-between h-100">
+                <a href="#">
+                    <img src="/images/logo.svg" alt="전북 축제 On!" title="전북 축제 On!" height="45">
+                </a>
+                <!-- 데스크톱 -->
+                <div class="navi d-none d-lg-flex">
+                    <div class="navi__item">
+                        <a href="#">HOME</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">전북 대표 축제</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">축제 정보</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">축제 일정</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">환율안내</a>
+                    </div>
+                    <div class="navi__item">
+                        <a href="#">종합지원센터</a>
+                        <div class="navi__sub-list">
+                            <a href="#">공지사항</a>
+                            <a href="#">센터 소개</a>
+                            <a href="#">관광정보 문의</a>
+                            <a href="#">데이터 공개</a>
+                            <a href="#" data-target="#road-modal" data-toggle="modal">찾아오시는 길</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 모바일 -->
+                <label for="open-aside" class="icon d-lg-none">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <aside class="header-aside">
+                    <div class="header-search header-search--mobile">
+                        <div class="icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="header-util header-util--mobile">
+                        <select>
+                            <option value="ko">한국어</option>
+                            <option value="en">English</option>
+                            <option value="ch">中文(简体)</option>
+                        </select>
+                        <a href="#">전라북도청</a>
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                    <div class="navi navi--mobile">
+                        <div class="navi__item">
+                            <a href="#">HOME</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">전북 대표 축제</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">축제 정보</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">축제 일정</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">환율안내</a>
+                        </div>
+                        <div class="navi__item">
+                            <a href="#">종합지원센터</a>
+                            <div class="navi__sub-list">
+                                <a href="#">공지사항</a>
+                                <a href="#">센터 소개</a>
+                                <a href="#">관광정보 문의</a>
+                                <a href="#">데이터 공개</a>
+                                <a href="#" data-target="#road-modal" data-toggle="modal">찾아오시는 길</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="header-sub">
+                <div class="container">
+                    <a href="#">전북 축제 On!</a>
+                    <span class="mx-2"><i class="fa fa-angle-right"></i></span>
+                    <a href="#">전북 대표 축제</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /헤더 영역 -->
+
+    <!-- 전북 대표 축제 -->
+    <div class="container padding">
+        <div class="d-between border-bottom pb-3">
+            <div>
+                <hr>
+                <div class="title">
+                    <h1>JEONBUK <strong>ON!</strong></h1>
+                    <p>전북 대표 축제</p>
+                </div>
+            </div>
+            <div class="tabs">
+                <a href="?type=normal" class="tabs__item normal active">
+                    <span class="icon">
+                        <i class="fa fa-table"></i>
+                    </span>
+                    일반형
+                </a>
+                <a href="?type=list" class="tabs__item list">
+                    <span class="icon">
+                        <i class="fa fa-list"></i>
+                    </span>
+                    목록형
+                </a>
+            </div>
+        </div>
+        <div id="content">
+            
+        </div>
+        <div class="paging">
+            
+        </div>
+    </div>
+    <script src="/js/main-festival.js"></script>
+    <!-- /전북 대표 축제 -->
+
+    <!-- 축제 정보 모달 -->
+    <div id="view-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header d-between">
+                    <div class="font-weight-bold fx-4">축제 상세 정보</div>
+                    <span class="icon" data-dismiss="modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img class="fit-cover hx-300" src="/xml/festivalImages/001_10001/10001_1.jpg" alt="축제 이미지">
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="fx-4 font-weight-bold">${lastItem.name}</div>
+                            <div class="mt-4">
+                                <div class="mt-1">
+                                    <span class="fx-n2 text-muted mr-2">기간</span>
+                                    <span class="fx-n1">${lastItem.period}</span>
+                                </div>
+                                <div class="mt-1">
+                                    <span class="fx-n2 text-muted mr-2">장소</span>
+                                    <span class="fx-n1">${lastItem.period}</span>
+                                </div>
+                                <div class="mt-1">
+                                    <span class="fx-n2 text-muted mr-2">기간</span>
+                                    <span class="fx-n1">${lastItem.period}</span>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p class="fx-n2 text-muted">${lastItem.content}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-4">
+                    <div class="fx-3 font-weight-bold">축제 사진</div>
+                    <div class="f-slide">
+                        <div class="f-slide__inner">
+                            <img src="/xml/festivalImages/001_10001/10001_1.jpg" alt="축제 이미지">
+                            <img src="/xml/festivalImages/001_10001/10001_2.jpg" alt="축제 이미지">
+                            <img src="/xml/festivalImages/001_10001/10001_3.jpg" alt="축제 이미지">
+                            <img src="/xml/festivalImages/001_10001/10001_4.jpg" alt="축제 이미지">
+                        </div>
+                    </div>
+                    <div class="f-control">
+                        <button class="btn-filled">이전</button>
+                        <button class="f-control__btn active">1</button>
+                        <button class="f-control__btn">2</button>
+                        <button class="f-control__btn">3</button>
+                        <button class="f-control__btn">4</button>
+                        <button class="btn-filled">다음</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /축제 정보 모달 -->
+    
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer__top">
+            <div class="container d-flex flex-wrap">
+                <a href="#" class="mr-3">이용안내</a>
+                <a href="#" class="mr-3">개인정보 처리방침</a>
+                <a href="#" class="mr-3">저작권 보호정책</a>
+                <a href="#" class="mr-3">도로명 주소안내</a>
+                <a href="#" class="mr-3">사이트오류 신고</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container text-center text-lg-left">
+                <div class="row py-2">
+                    <div class="col-lg-3">
+                        <img class="logo" src="/images/logo.svg" alt="전북 축제 On!" title="전북 축제 On!" height="40">
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="text-muted fx-n3">인천시 부평구 무네미로 448번길 77 한국산업인력공단 글로벌숙련기술진흥원</p>
+                        <p class="text-muted fx-n3">COPYRIGHTⓒ 2016 HRDKOREA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /푸터 -->
+</body>
+</html>
